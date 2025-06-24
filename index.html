@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAY A - Futuristic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-text">
+                <span class="loading-letter">I</span>
+                <span class="loading-letter">N</span>
+                <span class="loading-letter">I</span>
+                <span class="loading-letter">T</span>
+                <span class="loading-letter">I</span>
+                <span class="loading-letter">A</span>
+                <span class="loading-letter">L</span>
+                <span class="loading-letter">I</span>
+                <span class="loading-letter">Z</span>
+                <span class="loading-letter">I</span>
+                <span class="loading-letter">N</span>
+                <span class="loading-letter">G</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="matrix-bg"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-logo">
+            <span class="logo-text">AJAY.A</span>
+            <div class="logo-pulse"></div>
+        </div>
+        <div class="nav-menu">
+            <a href="#home" class="nav-link" data-text="HOME">HOME</a>
+            <a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a>
+            <a href="#projects" class="nav-link" data-text="PROJECTS">PROJECTS</a>
+            <a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">AJAY</span>
+                    <span class="title-line">ARCHITECT</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & Digital Innovator</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring-2"></div>
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Profile" class="avatar-image">
+                    <div class="avatar-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-bg">
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT_ME.EXE</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <span class="terminal-title">developer_profile.js</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span> 
+                                <span class="code-variable">developer</span> = {
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">name:</span> 
+                                <span class="code-string">"Ajay A"</span>,
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">role:</span> 
+                                <span class="code-string">"Full Stack Developer"</span>,
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">passion:</span> 
+                                <span class="code-string">"Building the Future"</span>,
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">skills:</span> [
+                            </div>
+                            <div class="code-line double-indent">
+                                <span class="code-string">"React"</span>,
+                                <span class="code-string">"Node.js"</span>,
+                                <span class="code-string">"AI/ML"</span>
+                            </div>
+                            <div class="code-line indent">]</div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="95">
+                                <span>React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <span>CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="88">
+                                <span>Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="82">
+                                <span>MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="80">
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="download-section">
+                <a href="#" class="download-btn">
+                    <span class="btn-text">DOWNLOAD_RESUME.ZIP</span>
+                    <div class="btn-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PROJECTS_ARCHIVE</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smart Attendance System">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Attendance System</h3>
+                        <p class="project-description">Advanced facial recognition system with real-time analytics and automated reporting capabilities.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">99.8%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">0.3s</span>
+                                <span class="stat-label">Response</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-primary">VIEW_PROJECT</button>
+                            <button class="btn-secondary">SOURCE_CODE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smart Living">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">IoT</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Living Hub</h3>
+                        <p class="project-description">Comprehensive IoT ecosystem for home automation with voice control and predictive analytics.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">50+</span>
+                                <span class="stat-label">Devices</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-primary">VIEW_PROJECT</button>
+                            <button class="btn-secondary">SOURCE_CODE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI Assistant">
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Neural Assistant</h3>
+                        <p class="project-description">Advanced AI assistant with natural language processing and machine learning capabilities.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn-primary">VIEW_PROJECT</button>
+                            <button class="btn-secondary">SOURCE_CODE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ESTABLISH_CONNECTION</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <div class="icon-pulse"></div>
+                            📧
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">EMAIL_ADDRESS</span>
+                            <span class="contact-value">ajay@developer.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <div class="icon-pulse"></div>
+                            📱
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">PHONE_NUMBER</span>
+                            <span class="contact-value">+91 9876543210</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <div class="icon-pulse"></div>
+                            📍
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">LOCATION</span>
+                            <span class="contact-value">Bangalore, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">FULL_NAME</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">EMAIL_ADDRESS</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">MESSAGE_CONTENT</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">TRANSMIT_MESSAGE</span>
+                            <div class="btn-loader"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <span>© 2024 AJAY.A - DIGITAL ARCHITECT</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">GITHUB</a>
+                    <a href="#" class="social-link">LINKEDIN</a>
+                    <a href="#" class="social-link">TWITTER</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="">
+                <div class="modal-info">
+                    <p id="modal-description"></p>
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul id="modal-features-list"></ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies Used:</h4>
+                        <div id="modal-tech-tags"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
